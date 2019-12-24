@@ -7,8 +7,10 @@
     </head>
     <body>        
         <div class="wrap">
-            <div class="chat" id="chat"></div>
-            <div id="authBlock" class="authBlock" data-coord="" data-address="" data-position="">
+            <div class="chat" id="chat">
+                {{> "./src/templates/chat.hbs"}}
+            </div>
+            <div id="authBlock" class="authBlock">
                 {{> "./src/templates/auth.hbs"}}
             </div>
         </div>
