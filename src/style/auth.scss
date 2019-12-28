@@ -1,9 +1,13 @@
+
+
 .authBlock {
+    // visibility: hidden;
+    z-index: 10;
     position: absolute;
     left: 50%;
-    top: 100px;
-    transform: translateX(-50%);
-    background: #17212b;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: $formBgColor;
     width: 515px;
     height: 550px;
     display: flex;
@@ -28,7 +32,7 @@
 }
 .authBlock__logo {
     border-radius: 50%;
-    background: #242f3d;
+    background: $liteBgColor;
     height: 140px;
     width: 140px;
     margin: 0 auto;
@@ -56,7 +60,7 @@
         color: #fff;
         border: 0px;
         border-bottom: 2px solid #465362;
-        background: #17212b;
+        background: $formBgColor;
         box-shadow: 0;
         outline: 0;
         outline-offset: 0;
@@ -77,4 +81,5 @@
     text-transform: uppercase;
     color: white;
     padding: 15px 40px;
+    border: none;
 }

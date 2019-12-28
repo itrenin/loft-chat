@@ -1,0 +1,47 @@
+<div class="chat__header">
+    <div class="chat__header--close">
+        <img src="./src/img/close.png" alt="закрыть">
+    </div>
+    <div class="chat__header--expand">
+        <img src="./src/img/expand.png" alt="развернуть">
+    </div>
+    <div class="chat__header--collapse">
+        <img src="./src/img/collapse.png" alt="свернуть">
+    </div>
+</div>
+<div class="chat__body">
+    <div class="chat__body--sidebar">
+        <div class="sidebar__head">
+            <div class="sidebar__menu">
+                <div class="humburger__bar"></div>
+                <div class="humburger__bar"></div>
+                <div class="humburger__bar"></div>
+            </div>
+            <div class="sidebar__filter">
+                <input type="text" class="sidebar__filter--input" placeholder="Найти...">
+            </div>
+
+        </div>
+        <!-- началао список пользователей онлайн--->
+        <div id="users-list">
+            <!-- {{> "./userList.hbs"}} --->
+        </div>
+        <!-- конец список пользователей онлайн--->
+        
+    </div>
+    <div class="chat__body--message-zone">
+        <div class="message-zone__header">
+            <div class="chat-name">Чат</div>
+            <div class="member-count">{число} участника</div>
+        </div>
+        <div class="message-zone__body">
+            {{> "./messages.hbs"}}
+        </div>
+        <div class="message-zone__input">
+            <div class="message-zone__input--center">
+                <input type="text" id="message__input" placeholder="Введите сообщение...">
+                <button class="input__button">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
