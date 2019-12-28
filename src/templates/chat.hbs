@@ -22,23 +22,26 @@
             </div>
 
         </div>
-        <!-- началао список пользователей онлйн--->
-        <ul class="sidebar__users">
-            <li class="user__item">
-                <div class="user__pic">
-                    <img src="./src/img/no-avatar-300x300.png" alt="" width="100%" height="100%">
-                </div>
-                <div class="user__info">
-                    <div class="user__name">Иван Петров</div>
-                    <div class="user__status">Петросяню</div>
-                </div>
-            </li>
-        </ul>
-        <!-- конец список пользователей онлйн--->
+        <!-- началао список пользователей онлайн--->
+        <div id="users-list">
+            <!-- {{> "./userList.hbs"}} --->
+        </div>
+        <!-- конец список пользователей онлайн--->
+        
     </div>
     <div class="chat__body--message-zone">
-        <div class="message-zone__header">1</div>
-        <div class="message-zone__body">2</div>
-        <div class="message-zone__input">3</div>
+        <div class="message-zone__header">
+            <div class="chat-name">Чат</div>
+            <div class="member-count">{число} участника</div>
+        </div>
+        <div class="message-zone__body">
+            {{> "./messages.hbs"}}
+        </div>
+        <div class="message-zone__input">
+            <div class="message-zone__input--center">
+                <input type="text" id="message__input" placeholder="Введите сообщение...">
+                <button class="input__button">Отправить</button>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{{htmlWebpackPlugin.options.title}}</title>
 
-    </head>
-    <body>        
-        <div class="wrap">
-            <div class="chat" id="chat">
-                {{> "./src/templates/chat.hbs"}}
-            </div>
-            <div id="authBlock" class="authBlock">
-                {{> "./src/templates/auth.hbs"}}
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <title>{{htmlWebpackPlugin.options.title}}</title>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="chat" id="chat">
+            {{> "./src/templates/chat.hbs"}}
         </div>
-    </body>
+        <div id="authBlock" class="authBlock">
+            {{> "./src/templates/auth.hbs"}}
+        </div>
+    </div>
+    <!--
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script type="module">
+
+        import { entry } from './index.js';
+
+        entry(); 
+    </script> --->
+</body>
+
 </html>

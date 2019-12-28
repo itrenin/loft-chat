@@ -5,8 +5,10 @@ $messageBgColor: #0e1621;
 $fonfGray: #6c7883;
 $whiteText: #FFFFFF;
 $grayText: #414e5b;
+$bgButton: #5288c1;
 
 @import "./auth.scss"; 
+@import "./messages.scss"; 
 
 li {
     list-style: none;
@@ -88,6 +90,10 @@ li {
     width: 100%;
     border: 0;
     border-radius: 5px;
+    border: none;
+    caret-color: $whiteText;
+    color: $whiteText;
+    outline: none;
     //width: 100px;
     //margin-right: 20px;
 }
@@ -125,6 +131,16 @@ li {
 .message-zone__header{
     background: $formBgColor;
     height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.chat-name{
+    color: $whiteText;
+}
+.member-count{
+    color: $grayText;
 }
 .message-zone__body{
     background: $messageBgColor;
@@ -133,4 +149,28 @@ li {
 .message-zone__input{
     background: $formBgColor;
     height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.message-zone__input--center{
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#message__input {
+     width: 100%;
+     background: $formBgColor;
+     border: none;
+     caret-color: $whiteText;
+     color: $whiteText;
+     outline: none;
+}
+.input__button{
+    background: $bgButton;
+    border: none;
+    color: $whiteText;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-right: 10px;
 }
